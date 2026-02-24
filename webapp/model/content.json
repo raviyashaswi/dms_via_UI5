@@ -1,0 +1,19 @@
+{
+    "selected": {
+        "repo": null,
+        "obj": null
+    },
+    "repos": [
+        {
+            "repositoryId": "79fa6e2e-ef0c-4caf-8b14-4fc288b20a1c",
+            "repositoryName": "TEST-REPO",
+            "repositoryDescription": "TEST-REPO"
+        },
+        {
+            "repositoryId": "0648bb78-88ca-4e7d-a999-087eecf8fbe4",
+            "repositoryName": "DEV AARINI TDD repository",
+            "repositoryDescription": "DEV AARINI TDD repository"
+        }
+        
+    ]
+}

@@ -1,0 +1,103 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:vbm="sap.ui.vbm"
+    xmlns:f="sap.ui.layout.form">
+    <Dialog id="_IDGenDialog" title="file" draggable="true" resizable="true">
+        <content>
+            <!-- <Link id="_IDGenLink" text="doc" href="{content>/image}" target="__blank"></Link> -->
+            <HBox id="_IDGenHBox" width="100%">
+            <layoutData>
+            <FlexItemData id="_IDGenFlexItemData" growFactor="1" baseSize="0"></FlexItemData>
+            </layoutData>
+                <VBox  id="_IDGenVBox1" width="100%">
+               
+                    <core:HTML id="_IDGenHTML" preferDOM="true" content='&lt;object data="{content>/image}" type="application/pdf" width="100%" height="100%" &gt;&lt;/object&gt;'>
+                        <core:layoutData>
+                            <FlexItemData id="_IDGenFlexItemData1" growFactor="1" baseSize="0" />
+                        </core:layoutData>
+                    </core:HTML>
+                </VBox>
+                <VBox id="_IDGenVBox2" width="100%">
+                    <f:SimpleForm id="_IDGenSimpleForm1" editable="true" layout="ColumnLayout" title="Document Metadata Details">
+                        <f:content>
+                            <Label id="_IDGenLabel2" text="Document ID" />
+                            <Text id="_IDGenText12" text="DOC-2026-0042" />
+
+                            <Label id="_IDGenLabel13" text="File Name" />
+                            <Input id="_IDGenInput3" value="{content>/fileName}" placeholder="Enter filename..." />
+
+                            <Label id="_IDGenLabel14" text="Document Type" />
+                            <Select id="_IDGenSelect2" selectedKey="{content>/docType}">
+                                <core:Item id="_IDGenItem4" key="PDF" text="PDF Document" />
+                                <core:Item id="_IDGenItem5" key="IMG" text="Image/Scan" />
+                                <core:Item id="_IDGenItem6" key="DOC" text="Word Processing" />
+                            </Select>
+
+                            <Label id="_IDGenLabel15" text="Author" />
+                            <Text id="_IDGenText13" text="System Admin" />
+
+                            <Label id="_IDGenLabel16" text="Date Created" />
+                            <DatePicker id="_IDGenDatePicker1" value="2026-02-23" displayFormat="short" />
+
+                            <Label id="_IDGenLabel17" text="Repository Path" />
+                            <Input id="_IDGenInput4" value="/root/finance/invoices" editable="false" />
+
+                            <Label id="_IDGenLabel18" text="Approval Status" />
+                            <ObjectStatus id="_IDGenObjectStatus1" text="Pending Review" state="Warning" />
+
+                            <Label id="_IDGenLabel19" text="Version Number" />
+                            <StepInput id="_IDGenStepInput1" value="1.0" step="0.1" />
+
+                            <Label id="_IDGenLabel20" text="Internal Only" />
+                            <Switch id="_IDGenSwitch1" state="true" customTextOn="Yes" customTextOff="No" />
+
+                            <Label id="_IDGenLabel21" text="Comments" />
+                            <TextArea id="_IDGenTextArea2" rows="3" placeholder="Add internal notes about this document..." />
+                            <Label id="_IDGenLabel3" text="Document ID" />
+                            <Text id="_IDGenText10" text="DOC-2026-0042" />
+
+                            <Label id="_IDGenLabel4" text="File Name" />
+                            <Input id="_IDGenInput" value="{content>/fileName}" placeholder="Enter filename..." />
+
+                            <Label id="_IDGenLabel5" text="Document Type" />
+                            <Select id="_IDGenSelect1" selectedKey="{content>/docType}">
+                                <core:Item id="_IDGenItem1" key="PDF" text="PDF Document" />
+                                <core:Item id="_IDGenItem2" key="IMG" text="Image/Scan" />
+                                <core:Item id="_IDGenItem3" key="DOC" text="Word Processing" />
+                            </Select>
+
+                            <Label id="_IDGenLabel6" text="Author" />
+                            <Text id="_IDGenText11" text="System Admin" />
+
+                            <Label id="_IDGenLabel7" text="Date Created" />
+                            <DatePicker id="_IDGenDatePicker" value="2026-02-23" displayFormat="short" />
+
+                            <Label id="_IDGenLabel8" text="Repository Path" />
+                            <Input id="_IDGenInput1" value="/root/finance/invoices" editable="false" />
+
+                            <Label id="_IDGenLabel9" text="Approval Status" />
+                            <ObjectStatus id="_IDGenObjectStatus" text="Pending Review" state="Warning" />
+
+                            <Label id="_IDGenLabel10" text="Version Number" />
+                            <StepInput id="_IDGenStepInput" value="1.0" step="0.1" />
+
+                            <Label id="_IDGenLabel11" text="Internal Only" />
+                            <Switch id="_IDGenSwitch" state="true" customTextOn="Yes" customTextOff="No" />
+
+                            <Label id="_IDGenLabel12" text="Comments" />
+                            <TextArea id="_IDGenTextArea" rows="3" placeholder="Add internal notes about this document..." />
+                        </f:content>
+                    </f:SimpleForm>
+                </VBox>
+            </HBox>
+
+            <!-- <Image id="_IDGenImage1" src="{content>/image}" densityAware="false" decorative="false" width="100%" height="auto" backgroundPosition="center" mode="Image" /> -->
+        </content>
+        <beginButton>
+            <Button id="_IDGenButton4" text="Submit" type="Emphasized" press="onCloseDialog" />
+        </beginButton>
+        <endButton>
+            <Button id="_IDGenButton5" text="Cancel" press="onCloseDialog" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>
