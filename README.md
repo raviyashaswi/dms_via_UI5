@@ -1,3 +1,14 @@
+# DMS via UI5
+
+This repository contains the source code for the DMS (Document Management System) implemented using UI5.
+
+## Features
+- User-friendly interface
+- Document storage and retrieval
+- Search functionality
+- File upload and download
+
+
 ## Application Details
 |               |
 | ------------- |
